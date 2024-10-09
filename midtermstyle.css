@@ -1,0 +1,406 @@
+/*Clearing all default styling issues*/
+html, body, header, footer, hgroup, nav, article, section, figure, figcaption, h1, h2, h3, ul, li, body, div, p, img, a
+{
+   margin: 0;
+   padding: 0;
+   vertical-align: baseline;
+   border: 0;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Setting the default color of the background */
+body {
+    background-color: rgb(13, 17, 17)
+}
+/* Clearing all text decoration from "a" */
+a {
+    text-decoration: none;
+}
+/* NAV STUFF */
+/* Adding attributes to the nav */
+nav.pagenavi {
+    position: fixed;
+    top: 0;
+    background-color: rgb(13, 17, 17);
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    
+}
+/* Adding more specific attributes to the list in the nav */
+nav.pagenavi li {
+    
+    display: inline-block;
+    padding: 15px;
+    color: rgb(175, 175, 175);
+    font-size: 14px;
+    font-weight: bold;
+
+}
+/* Adding a # before the list in the nav */
+nav.pagenavi li:before {
+    
+    content: "# ";
+    color: rgb(20, 102, 95);
+}
+/* Adding a different object before the name section of the list in the nav to serve as a logo */
+nav.pagenavi li#name:before {
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    height:15px;
+    width: 15px;
+    background: rgb(20, 102, 95);
+}
+/* Moving the name section of the list all the way to the left */
+nav.pagenavi li#name {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    margin-right: 1230px;
+}
+/* Creating attributes so that when clicked the list object turns white  */
+nav.pagenavi li:active {
+    color: white;
+}
+/* Creating attributes so that when hovered upon the list object turns white */
+nav.pagenavi li:hover {
+    color: white;
+}
+/* SECTION (LANDING) STUFF */
+/* Setting the position of this section (which includes all sections)*/
+section.landing {
+    margin-top: 100px;
+    margin-left: 40px;
+}
+/* Setting the position of the first thing you see inside of the previous section using a tag */
+section#landing {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 25%;
+    height: 100px;
+    color: white;
+    font-weight: bold;   
+}
+/* Setting the font size of the first header */
+section#landing h1 {
+    font-size: 28px;
+}
+/* Setting where the paragraph in that section should be placed */
+section#landing p {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    
+    color: rgb(175, 175, 175);
+    font-weight: normal;
+}
+/* Setting where the button in that paragraph should be placed */
+section#landing button {
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgb(22, 24, 24);
+    color: white;
+    border-color: rgb(20, 102, 95);
+}
+/* Making the button look nicer */
+span#contactbutton button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+    padding-left:20px;
+    padding-right:20px;
+}
+/* Making the button light up when hovered upon */
+span#contactbutton button:hover {
+    background-color: rgba(20, 102, 95, 0.363);
+}
+/* Setting certain words to different colors */
+section#landing h1 span#h1color {  
+    color: rgb(20, 102, 95);
+}
+
+/* ASIDE SECTION */
+/* Setting the size of the aside section */
+aside#landing {
+    width: auto;
+    padding-left: 10px;
+    margin-right: 30%;
+    float: right;
+}
+/* Setting how the paragraphs should look in this section */
+aside#landing p {
+    border: 1px;
+    border-style: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(175, 175, 175);
+}
+/* Changing the color of certain words in the paragraph */
+aside#landing p span#asidetextoffcolor {
+    color: white;
+    font-weight: bold;
+}
+/* Creating an object before the paragraph */
+aside#landing p:before {
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    height:15px;
+    width: 15px;
+    background: rgb(20, 102, 95);
+}
+
+/* QUOTE SECTION */
+/* Setting the attributes and where the quote section should be placed */
+section#quote {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin-top: 35%;
+    margin-left: 20%;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+}
+/* Setting where the header should be placed in the quote section*/
+section#quote h1 { 
+    color: white;
+    font-size: 24px;
+    margin: 10px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+/* Setting the default section formatting for the #BLANK sections*/
+section.nsinfront h1 {
+    color: white;
+    font-size: 32px;
+}
+
+section.nsinfront h1:before {
+    content: "# ";
+    color: rgb(20, 102, 95);
+}
+
+section.slinfront h1 {
+    color: white;
+    font-size: 32px;
+}
+
+section.slinfront h1:before {
+    content: "/ ";
+    color: rgb(20, 102, 95);
+}
+
+/* PROJECT SECTION */
+/* Setting the position and the location of the projects section*/
+section#projects {
+    position: absolute;
+    margin-top: 47%;
+    margin-left: 10%;
+}
+
+/* SKILL SECTION */
+section#skills {
+    position: absolute;
+    margin-top: 63%;
+    margin-left: 10%;
+}
+
+/* ABOUT-ME SECTION */
+/* Setting the position and the location of the aboutme section*/
+section#aboutme {
+    position: absolute;
+    margin-top: 79%;
+    margin-left: 10%;
+}
+
+/* Setting the attributes of paragraphs within the about-me section */
+section#aboutme p {
+    width: 37%;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(175, 175, 175);
+    font-weight: normal;
+}
+/* Setting the attributes of the button within the about-me section */
+section#aboutme button {
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgb(22, 24, 24);
+    color: white;
+    border-color: rgb(20, 102, 95);
+}
+/* Creating an "Aboutme2" id so I can get more specific about where I want to place things */
+/* Aboutme2 is used in the clickable aboutme section */
+/* Setting the position and the location of the aboutme2 section*/
+section#aboutme2 {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+/* Setting the attributes of paragraphs within the aboutme2 section */
+section#aboutme2 p {
+    width: 37%;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(175, 175, 175);
+    font-weight: normal;
+}
+/* Still About-me */
+/* Setting the attributes of the "readmore" button within the aboutme section  */
+span#readmore button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 10px;
+    padding-left:20px;
+    padding-right:20px;
+}
+/* Making the button light up whenever you hover over it */
+span#readmore button:hover {
+    background-color: rgba(20, 102, 95, 0.363);
+}
+
+/* CONTACTS SECTION */
+/* Setting the position and location of the contacts section */
+section#contacts {
+    position: absolute;
+    margin-top: 110%;
+    margin-left: 10%;
+}
+/* Setting the attributes of paragraphs within the contacts section */
+section#contacts p {
+    width: 37%;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(175, 175, 175);
+    font-weight: normal;
+}
+/* Moving the linebreak down in section */
+section#contacts hr {
+    margin-top: 200px;
+}
+/* Setting the attributes of the instagram button in the contacts section */
+span#instagram button {
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgb(22, 24, 24);
+    color: white;
+    border-color: rgb(20, 102, 95);
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 10px;
+    padding-left:20px;
+    padding-right:20px;
+}
+/* Making the button glow when hovered upon */
+span#instagram button:hover {
+    background-color: rgba(20, 102, 95, 0.363);
+}
+
+/* ABOUT ME PAGE ITEMS */
+/* Aside on aboutmemidterm*/
+/* Setting the attributes of the aside on the about me page */
+aside#aboutmepic {
+    width: auto;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-right: 20%;
+    float: right;
+}
+/* Setting the atttributes of the paragraphs on the about me page */
+aside#aboutmepic p:before {
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    height:15px;
+    width: 15px;
+    background: rgb(20, 102, 95);
+}
+/* Setting the attributes of skills2 on aboutmemidterm */
+section#skills2 {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35%;
+    margin-left: 10%;
+    width: 50%;
+}
+/* Setting the attributes of the header1 on skills2 on the aboutmemidterm */
+section#skills2 h1 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+/* Setting the attributes of the paragraphs on skills2 on aboutmemidterm */
+section#skills2 p {
+    border: 1px;
+    margin-right: 10px;
+    border-style: solid;
+    padding-top: 10px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(175, 175, 175);
+}
+/* Setting up a span to make certain words white */
+section#skills2 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px;
+    margin-right: 20px;
+    border-style: solid;
+}
+/* Getting specific to expand certain boxes to fit their respective ones */
+section#skills2 span#skillsLanguages {
+    padding-left: 146px;
+    padding-right: 147px;
+}
+/* "Same thing ^" */
+section#skills2 span#skillsTools {
+    padding-left: 93px;
+    padding-right: 93px;
+}
+/* FUN FACTS SECTION */
+/* Setting the attributes of the fun facts section on aboutmemidterm */
+section#myfunfacts {
+    position: absolute;
+    width: 37%;
+    margin-top: 50%;
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Setting the attributes of the header1 of the fun facts section on aboutmemidterm */
+section#myfunfacts h1 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+/* Setting the attributes of the paragraph of the fun facts section on aboutmemidterm */
+section#myfunfacts p {
+    border: 1px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-style: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(175, 175, 175);
+}
+/* Creating an option to have certain words right but I ended up not doing it */
+section#myfunfacts span {
+    color: white;
+}
+
+/* Animations (NOT USED)*/
